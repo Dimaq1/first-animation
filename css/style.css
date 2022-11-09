@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #f0f0f0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 8px 8px 8px #cccccc;
+  animation-name: box;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes box {
+  0% {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    box-shadow: 8px 8px 8px #cccccc;
+  }
+
+  5% {
+    width: 70px;
+    height: 70px;
+    background-color: #f8f8f8;
+    box-shadow: 6px 6px 6px #cccccc, inset 10px 10px 10px #b9b7b7;
+  }
+
+  15% {
+    width: 70px;
+    height: 70px;
+    box-shadow: 8px 8px 8px #cccccc;
+  }
+
+  30% {
+    width: 70px;
+    height: 270px;
+    box-shadow: 8px 8px 8px #cccccc;
+  }
+
+  50% {
+    width: 470px;
+    height: 270px;
+    box-shadow: 20px 20px 20px #cccccc;
+  }
+
+  75% {
+    width: 70px;
+    height: 270px;
+    box-shadow: 8px 8px 8px #cccccc;
+  }
+
+  100% {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    box-shadow: 8px 8px 8px #cccccc;
+  }
+
+}
